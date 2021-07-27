@@ -43,15 +43,23 @@ DEFAULT_PACKAGES.nas:=\
 	mdadm
 # For router targets
 DEFAULT_PACKAGES.router:=\
-	dnsmasq \
+	dnsmasq-full \
 	firewall \
 	ip6tables \
+	ip6tables-extra \
+	ip6tables-mod-nat \
 	iptables \
+	iptables-mod-nat-extra \
+	iptables-mod-filter \
 	kmod-ipt-offload \
 	odhcp6c \
 	odhcpd-ipv6only \
 	ppp \
-	ppp-mod-pppoe
+	ppp-mod-pppoe \
+	luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw \
+	luci luci-app-ddns luci-app-upnp luci-app-autoreboot luci-app-vsftpd luci-app-arpbind luci-app-wol \
+	luci-app-nlbwmon luci-app-banip luci-app-acme acme acme-dnsapi luci-app-commands luci-app-qos \
+	luci-app-samba4 luci-app-uhttpd luci-app-watchcat luci-theme-material
 
 ifneq ($(DUMP),)
   all: dumpinfo
