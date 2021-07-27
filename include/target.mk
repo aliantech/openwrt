@@ -40,8 +40,6 @@ DEFAULT_PACKAGES.nas:=\
 	block-mount \
 	fdisk \
 	lsblk \
-	luci-app-samba4 \
-	luci-app-vsftpd \
 	mdadm
 # For router targets
 DEFAULT_PACKAGES.router:=\
@@ -59,9 +57,10 @@ DEFAULT_PACKAGES.router:=\
 	ppp \
 	ppp-mod-pppoe \
 	luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw \
-	luci luci-compat luci-app-ddns ddns-scripts ddns-scripts-services ddns-scripts_aliyun luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-wol \
+	luci luci-compat luci-app-ddns ddns-scripts ddns-scripts-services luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-wol \
 	luci-app-nlbwmon luci-app-banip luci-app-acme acme acme-dnsapi luci-app-commands luci-app-qos luci-app-smartdns \
-	luci-app-watchcat luci-theme-material luci-app-vlmcsd luci-app-filetransfer luci-app-jd-dailybonus luci-app-rclone rclone rclone-ng rclone-webui-react
+	luci-app-watchcat luci-theme-material luci-app-vlmcsd luci-app-filetransfer luci-app-jd-dailybonus luci-app-rclone rclone rclone-ng rclone-webui-react \
+	luci-app-samba4 luci-app-vsftpd luci-nginx default-settings luci-mod-dashboard
 
 ifneq ($(DUMP),)
   all: dumpinfo
