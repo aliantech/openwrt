@@ -56,7 +56,7 @@ DEFAULT_PACKAGES.router:=\
 	odhcpd-ipv6only \
 	ppp \
 	ppp-mod-pppoe \
-	luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw \
+	luci-newapi block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw block-mount fdisk lsblk mdadm \
 	luci luci-compat luci-app-ddns ddns-scripts-services luci-app-upnp luci-app-autoreboot luci-app-arpbind luci-app-wol \
 	luci-app-nlbwmon luci-app-banip luci-app-acme acme acme-dnsapi luci-app-commands luci-app-qos luci-app-smartdns \
 	luci-app-watchcat luci-theme-material luci-app-vlmcsd luci-app-jd-dailybonus luci-app-rclone rclone rclone-ng rclone-webui-react \
