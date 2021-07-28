@@ -17,7 +17,7 @@ KERNELNAME:=bzImage
 
 include $(INCLUDE_DIR)/target.mk
 
-DEFAULT_PACKAGES += partx-utils mkf2fs e2fsprogs kmod-button-hotplug wpad kmod-usb-hid \
+DEFAULT_PACKAGES += partx-utils mkf2fs e2fsprogs kmod-button-hotplug kmod-usb-hid \
 kmod-e1000e kmod-igb kmod-igc kmod-igbvf kmod-ixgbe kmod-ixgbevf kmod-vmxnet3 kmod-r8125 kmod-8139cp kmod-8139too kmod-fs-f2fs
 
 $(eval $(call BuildTarget))
